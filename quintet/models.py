@@ -11,3 +11,4 @@ class TimeStampedModel(models.Model):
     class Meta:
         abstract = True
         ordering = ['-modified']
+        get_latest_by = 'modified'
